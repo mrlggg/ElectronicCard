@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fafdff, #e8f5ff, #f5faff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    padding: 20px;
+    color: #344b62;
+}
+
+.container {
+    width: 100%;
+    max-width: 460px;
+    background: rgba(255,255,255,0.9);
+    padding: 45px 35px;
+    border: 1px solid #dceefa;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 15px 45px rgba(108,160,200,0.12);
+    animation: appear 0.8s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.top-icon {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #83b9df;
+}
+
+.small-label {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #8baec9;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #456b8c;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #8297aa;
+    margin-bottom: 30px;
+}
+
+.question-box {
+    background: #f0f8ff;
+    border: 1px solid #dceefa;
+    border-radius: 12px;
+    padding: 22px 15px;
+    margin-bottom: 20px;
+}
+
+.question-box span {
+    font-size: 10px;
+    color: #85abc9;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.question-box p {
+    margin-top: 12px;
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    color: #496e8e;
+    line-height: 1.5;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d7e8f4;
+    border-radius: 9px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    text-align: center;
+    color: #456b8c;
+    background: #fff;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #86bce2;
+    box-shadow: 0 0 0 3px rgba(134,188,226,0.15);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    margin-top: 15px;
+    background: #78add5;
+    color: white;
+    font-family: inherit;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #568fbf;
+    transform: translateY(-2px);
+}
+
+.message {
+    font-size: 12px;
+    color: #d17d89;
+    margin-top: 15px;
+    min-height: 18px;
+}
+
+.hint {
+    font-size: 11px;
+    color: #a0afbc;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Greeting Card */
+
+.card-content {
+    animation: appear 1s ease;
+}
+
+.card-content h1 {
+    font-size: 35px;
+    line-height: 1.4;
+}
+
+.card-content .greeting {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    color: #6d9ec3;
+    margin: 25px 0 15px;
+}
+
+.card-message {
+    font-size: 14px;
+    line-height: 2;
+    color: #71869a;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signature {
+    margin-top: 30px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #6799bd;
+}
+
+.decor {
+    color: #a4cce8;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.footer {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #a4b8c8;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 35px 22px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
